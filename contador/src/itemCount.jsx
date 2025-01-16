@@ -50,6 +50,13 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       {stock === 0 && <p style={{ color: 'red' }}>Sem estoque disponível</p>}
     </div>
   );
+
+
+
+
+ 
+  
+
 };
 
 export default ItemCount;
