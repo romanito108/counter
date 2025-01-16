@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchProdutos } from "./ClickCounter"; // Usando o fetchProdutos do seu código
+import { fetchProdutos } from "./ClickCounter"; 
 import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
