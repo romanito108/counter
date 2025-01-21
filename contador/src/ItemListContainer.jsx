@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchProdutos } from "./ClickCounter"; // Usando o fetchProdutos do seu código
+import mockFetchItems from "./mock";
 import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
@@ -7,7 +7,7 @@ const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchProdutos().then((data) => {
+    mockFetchItems ().then((data) => {
       setProdutos(data);
       setLoading(false);
     });

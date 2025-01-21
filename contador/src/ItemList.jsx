@@ -1,13 +1,17 @@
 import React from "react";
-import Item from "./Item";
 
 const ItemList = ({ produtos }) => {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <ul>
       {produtos.map((produto) => (
-        <Item key={produto.id} {...produto} />
+        <li key={produto.id}>
+          <h2>{produto.title}</h2>
+          <p>{produto.description}</p>
+          <p>Preço: R$ {produto.price}</p>
+          <img src={produto.pictureUrl} alt={produto.title} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 
