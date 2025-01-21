@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
+<<<<<<< HEAD
 import mockFetchItems from "./mock";
+=======
+import { fetchProdutos } from "./ClickCounter"; 
+>>>>>>> a686911b1591e7a86eb853c1245db457a5c9f44c
 import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
