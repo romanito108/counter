@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import mockFetchItems from "./mock"; // Usa o mock existente
+import mockFetchItems from "./mock"; 
 import ItemDetail from "./itemDetail";
 
 function ItemDetailContainer() {
@@ -8,7 +8,7 @@ function ItemDetailContainer() {
 
   useEffect(() => {
     mockFetchItems().then((data) => {
-      const singleItem = data[0]; // Seleciona o primeiro item
+      const singleItem = data[0]; 
       setItem(singleItem);
       setLoading(false);
     });
